@@ -67,6 +67,6 @@ RUN wget https://github.com/grpc-ecosystem/grpc-gateway/releases/download/v$PROT
 
 ENV PROTOC_GEN_LINT 0.2.1
 
-RUN wget https://github.com/ckaznocha/protoc-gen-lint/releases/download/v$PROTOC_GEN_LINT/protoc-gen-lint_linux_amd64 && \
-    mv protoc-gen-lint_linux_amd64 /usr/local/bin/protoc-gen-lint && \
-    chmod +x /usr/local/bin/protoc-gen-lint
+RUN wget https://github.com/ckaznocha/protoc-gen-lint/releases/download/v$PROTOC_GEN_LINT/protoc-gen-lint_linux_amd64.zip && \
+    unzip protoc-gen-lint_linux_amd64.zip -d /usr/local/bin && \
+    rm -rf protoc-gen-lint_linux_amd64.zip
