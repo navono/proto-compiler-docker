@@ -2,7 +2,7 @@
 Compile `.proto` files with Docker.
 
 ## dev
-> docker built -t proto-compiler:latest .
+> docker build -t proto-compiler:latest .
 
 ## Usage
 > $ export protoCompiler="proto-compiler:latest"
